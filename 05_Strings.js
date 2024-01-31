@@ -19,3 +19,14 @@ console.log(gameName[0]);
 
 const result01 = gameName.slice(4,1)
 console.log(result01)
+const newstring ='     vishal   '
+console.log(newstring.trim())
+
+const url = 'https://vis%20halrjpt.com'
+console.log(url.trim())
+
+console.log(url.replace('%20)', '-'))
+
+console.log(url.includes('sundar'))
+
+console.log(gameName.split('-'))
