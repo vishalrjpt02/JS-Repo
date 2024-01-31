@@ -30,4 +30,29 @@ console.log(typeof num);
 console.log(typeof myfunction);
 
 
-// javascript is dynamiclly typed
+// javascript is dynamiclly typed//
+
+//stack (premittive) (Only Copy) , Heap (non-premittive)(refernce shared)
+
+let names= 'myalptop'
+names='chaiandcode'
+console.log(names);
+
+///For object types heap memo used for garabagecollector
+
+let RandomUser = {
+     Email : "Vishal.kuar@gmail.com",
+     upi : "vishal@YBL"
+};
+//RandomUser.Email="abc@gmail.com"
+//console.log(RandomUser.Email)
+let user2 =RandomUser
+user2.Email = "abc@gmail.com"
+
+
+
+console.log(RandomUser.Email)  /// o/p :: abc@gmail.com
+
+console.log(user2.Email)      //// o/p :: abc@gmail.com
+
+
