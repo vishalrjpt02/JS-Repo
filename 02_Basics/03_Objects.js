@@ -57,6 +57,27 @@ console.log(Object.entries(tinderuser));
 [ 'id', 'name', 'isloggedIn' ]
 [ '1234', 'Vishal', true ]
 [ [ 'id', '1234' ], [ 'name', 'Vishal' ], [ 'isloggedIn', true ] ] */
+ 
+
+//console.log(tinderuser.hasOwnProperty("isLoggedIn"));
 
 
-console.log(tinderuser.hasOwnProperty("isLoggedIn"));
+
+//*****/  De-structring of objects/function in js*****/
+
+const course ={
+    coursename : "js hindi",
+    price : "999",
+    courseInstruster : "Vishal"
+
+}
+
+// genral calling of function data
+console.log(course.price); 
+
+console.log(courseInstruster);  //"Vishal"
+
+//example of destructring
+const {courseInstruster : VishalSir} =course
+
+console.log(VishalSir);
