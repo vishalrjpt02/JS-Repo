@@ -18,7 +18,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.userFullName.lastName);  // Kumar
+//console.log(regularUser.fullname.userFullName.lastName);  // Kumar
 const obj1 ={1: "a",2: "b",3: "c",4: "d"}
 const obj2 ={1: "a",5: "b",3: "c",4: "d"}
 const obj4 ={1: "a",8: "b",3: "c",4: "d"}
@@ -49,9 +49,9 @@ const users =[
 ]
 
 users[1].email
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
 
 /*
 [ 'id', 'name', 'isloggedIn' ]
@@ -75,9 +75,27 @@ const course ={
 // genral calling of function data
 console.log(course.price); 
 
-console.log(courseInstruster);  //"Vishal"
-
 //example of destructring
-const {courseInstruster : VishalSir} =course
+const {courseInstruster : VishalSir} = course
+// console.log(VishalSir);  //"Vishal"
 
-console.log(VishalSir);
+// const navbar =({company}) => {   // props.company is replcaed as company
+
+// }
+
+// navbar(company = vishal);
+
+// json examples...
+
+// {
+//     "name" : "vishal",
+//     "courseName" : "js in hindi",
+//     "price" : "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
