@@ -46,8 +46,8 @@ Node.js v20.10.0
 
 
 
-const chai = new createUser("chai", 25)
- const tea = new createUser("tea", 250)
+const chai = new createUser("chai", 25);
+const tea = new createUser("tea", 250);
 
  tea.printMe()
  chai.printMe()

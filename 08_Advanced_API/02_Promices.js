@@ -9,11 +9,13 @@ const promiseOne = new Promise(function (resolve, reject) {
     }, 1000)
 })
 
-
-
 promiseOne.then(function () {
     console.log("Promise Consumed");
 })
+
+
+
+
 
 new Promise(function (resolve,reject) {
     setTimeout(function () {
@@ -35,6 +37,8 @@ const PromiseThee =new Promise(function(resolve,reject){
 PromiseThee.then(function (user) {
     console.log(user);
 })
+
+
 
 
 
@@ -60,6 +64,8 @@ const username = prommiseForth.then((user) => {
 
 
 
+
+
 const promiseFive =new Promise(function (resolve, reject) {
     setTimeout(function () {     
         let error =true;
@@ -71,8 +77,6 @@ const promiseFive =new Promise(function (resolve, reject) {
         }
     },1000)
 })
-
-
 
 
 async function consumePromiseFive() {
