@@ -27,5 +27,6 @@ chai.addCourse();
 chai.logMe();
 const msalachai =new User("MasalaCahi")
 msalachai.logMe()
+console.log(chai instanceof Teacher);
 
 //console.log(chai );
