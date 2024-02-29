@@ -92,25 +92,30 @@ consumePromiseFive();
 
 
 
-// async function getAllUsers() {
-//     try {
-//         var response = await fetch('https://jsonplaceholder.typicode.com/users')
+async function getAllUsers() {
+    var call = 2;
+    while(call){
+        try {
+            process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";  // to remove the 
+            var response = await fetch('https://localhost:7221/api/Employee', )
+    
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.log("E :", error);
+        }
+        call=call-1;
+    }
+    
+}
 
-//         const data = await response.json();
-//         console.log(data);
-//     } catch (error) {
-//         console.log("E :", error);
-//     }
+getAllUsers();
 
-// }
-
-// getAllUsers();
-
-fetch('https://jsonplaceholder.typicode.com/users')
-.then((response) => {
-    return response.json();
-})
-.then((data) => {
-    console.log(data);
-})
-.catch((error) => console.log(error))
+// fetch(' https://jsonplaceholder.typicode.com/users')
+// .then((response) => {
+//     return response.json();
+// })
+// .then((data) => {
+//     console.log(data);
+// })
+// .catch((error) => console.log(error))
